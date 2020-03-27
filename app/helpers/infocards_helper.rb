@@ -1,0 +1,2 @@
+module InfocardsHelper
+end

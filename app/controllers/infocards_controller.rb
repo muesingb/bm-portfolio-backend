@@ -1,0 +1,2 @@
+class InfocardsController < ApplicationController
+end
