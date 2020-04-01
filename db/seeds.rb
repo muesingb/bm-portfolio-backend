@@ -9,7 +9,7 @@
 Infoblock.create(name: "about")
 Infoblock.create(name: "projects")
 Infoblock.create(name: "blog")
-# Infoblock.create(name: "contact")
+Infoblock.create(name: "contact")
 
 Infocard.create(infoblock_id: 1, text:"About me", img_url: "pic of me")
 
