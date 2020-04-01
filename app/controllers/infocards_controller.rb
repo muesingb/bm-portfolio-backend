@@ -1,6 +1,6 @@
 class InfocardsController < ApplicationController
     def show
-        @info = Infocard.find(params[:id])
-        render json: @info
+        @infocard = Infocard.find(params[:id])
+        render json: @infocard
     end
 end
