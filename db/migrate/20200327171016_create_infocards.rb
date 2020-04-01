@@ -3,6 +3,7 @@ class CreateInfocards < ActiveRecord::Migration[6.0]
     create_table :infocards do |t|
       t.integer :infoblock_id
       t.string :img_url
+      t.string :title
       t.string :text
 
       t.timestamps

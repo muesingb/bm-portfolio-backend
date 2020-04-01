@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_03_27_171016) do
   create_table "infocards", force: :cascade do |t|
     t.integer "infoblock_id"
     t.string "img_url"
+    t.string "title"
     t.string "text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
