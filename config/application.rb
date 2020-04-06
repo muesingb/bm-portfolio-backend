@@ -17,14 +17,10 @@ module BmPortfolioBackend
     # the framework and any gems in your application.
     config.api_only = true
 
-    config.middleware.insert_before 0, "Rack::Cors" do
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins '*' #this will need to be changed so it is only accessed by front end application
-        resource(
-          '*',
-          headers: :any,
-          methods: [:get]
-          )
+        origins '*' # will change to only frontend application
+        resource '*', :headers => :any, :methods => [:get]
       end
     end
   end
